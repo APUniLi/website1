@@ -61,7 +61,7 @@ The authors provide the dataset with stock-level characteristics online. While t
 
 ```{r}
 options(timeout = 1200)
-characteristics <- read_csv("~/website1/blog/gu-kelly-xiu-replication/datashare.csv")
+characteristics <- read_csv("~/website1/blog/gu-kelly-xiu-replication/datashare.csv") # load the dataset from https://dachxiu.chicagobooth.edu/and import it to characteristics as it's too big for Github
 
 characteristics <- characteristics |>
   rename(month = DATE) |>
